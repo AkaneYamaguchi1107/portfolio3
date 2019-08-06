@@ -41,8 +41,15 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    '@nuxtjs/style-resources'
   ],
+  styleResources: {
+    scss: [
+      '@/assets/libs/_variales.scss',
+      '@/assets/libs/_mixins.scss' // use underscore "_" & also file extension ".scss"
+      ]
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options

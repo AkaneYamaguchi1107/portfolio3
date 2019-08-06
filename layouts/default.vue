@@ -1,55 +1,66 @@
 <template>
   <div>
+    <header class="header">
+      <h1 class="header__title">flower</h1>
+      <ul class="gnav">
+        <li class="gnav__item">
+          <nuxt-link to="" class="gnav__link">Topics</nuxt-link>
+        </li>
+        <li class="gnav__item">
+          <nuxt-link to="" class="gnav__link">Gift</nuxt-link>
+        </li>
+        <li class="gnav__item">
+          <nuxt-link to="" class="gnav__link">Message</nuxt-link>
+        </li>
+      </ul>
+    </header>
     <nuxt />
+    <footer class="footer">
+      <h1 class="footer__title">flower</h1>
+      <ul class="fnav">
+        <li class="fnav__item">
+          <nuxt-link to="" class="fnav__link">Topics</nuxt-link>
+        </li>
+        <li class="fnav__item">
+          <nuxt-link to="" class="fnav__link">Gift</nuxt-link>
+        </li>
+        <li class="fnav__item">
+          <nuxt-link to="" class="fnav__link">Message</nuxt-link>
+        </li>
+      </ul>
+    </footer>
   </div>
 </template>
 
-<style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+<style lang="scss" scoped>
+.header {
+  padding: 0 16px;
+  line-height: 56px;
+  font-size: 32px;
+  display: flex;
+  justify-content: space-between;
 }
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
+.gnav {
+  display: flex;
+  // padding-right: 40px;
+  &__item {
+    font-size: 24px;
+    padding-right: 40px;
+  }
 }
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+.footer {
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  &__title {
+    font-size: 16px;
+  }
 }
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.fnav {
+  display: flex;
+  // justify-content: space-between;
+  &__item {
+    padding-right: 40px;
+  }
 }
 </style>
